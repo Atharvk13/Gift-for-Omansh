@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid Number 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Background Grid -->
+    <div id="background-grid" class="bg-grid"></div>
+
+    <!-- 2. Intro Element -->
+    <div id="intro-container" class="intro-container">
+        <div class="hand-wrapper" id="cupcake-trigger">
+            <div class="cupcake">
+                <img src="cupcake.webp" alt="Cupcake Image" style="width:120px; height:auto;">
+            </div>
+
+            <div class="hand"></div>
+            <p class="click-hint">Click for a surprise!</p>
+        </div>
+    </div>
+
+    <!-- 3. The Number "2" Container -->
+    <div id="gallery-container" class="gallery-container"></div>
+
+    <!-- 4. Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="polaroid large-polaroid">
+                <div class="photo-frame">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="caption">
+                    <p id="modal-quote"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
